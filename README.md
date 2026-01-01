@@ -46,10 +46,15 @@ cargo build --release
 ### 2. Install the Binary
 
 Move the compiled binary to your system's binary directory. We rename it to avoid conflicts with the official applet.
+Move the fixed executable to /usr/bin/
 
 ```bash
 sudo cp target/release/cosmic-applet-audio /usr/bin/usr-audio-applet
 
+```
+or 
+```bash
+sudo /home/location/cosmic-applet-audio-fix /usr/bin/usr-audio-applet
 ```
 
 ### 3. Register the Applet
